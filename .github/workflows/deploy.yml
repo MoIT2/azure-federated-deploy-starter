@@ -1,0 +1,30 @@
+# Deployment workflow for the shipment tracker.
+#
+# Lab contract: you complete this workflow during the lab. The two marked
+# sections below are intentionally empty; the lab guide provides the exact
+# steps to paste into them. Fill in AZURE_WEBAPP_NAME with your App Service
+# name when you add the deploy step. The application code is correct and
+# never changes; this workflow file is the only file you edit.
+
+name: Deploy to Azure
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  AZURE_WEBAPP_NAME: "<your-app-name>"
+
+jobs:
+  deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      # ==== TODO 1: Azure sign-in step (added during the lab) ====
+
+      # ==== TODO 2: Deploy step (added during the lab) ====

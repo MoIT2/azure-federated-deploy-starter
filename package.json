@@ -1,0 +1,12 @@
+{
+  "name": "shipment-tracker",
+  "version": "1.0.0",
+  "description": "Zero-dependency sample app for the Deploy an Azure App with GitHub Actions and Federated Identity lab.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
